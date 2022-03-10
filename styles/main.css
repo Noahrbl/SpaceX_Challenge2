@@ -122,16 +122,23 @@ p {
 
 /* Large devices (tablets, 768px and up) */
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+}
 
 
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px) {
-    .main-cards {
-        column-count: 2;
+    h1 {
+        font-size: 4em;
     }
-    .main-cards-line {
-        column-count: 1;
+    h2 {
+        font-size: 3em;
     }
 }

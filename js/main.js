@@ -1,4 +1,5 @@
 setInterval(displayDate, displayClock, 1000);
+setInterval(displayImage, 60000);
 
 function displayDate() {
 
@@ -25,4 +26,21 @@ function displayClock() {
 
 }
 
-displayDate(), displayClock();
+function displayImage() {
+
+    var today = new Date();
+
+    var image = today.getUTCHours();
+
+    if (image >= 12 && image < 18) {
+        document.getElementById('dateImage').src = "images/day.jpg";
+    } else if (image >= 6 && image < 12) {
+        document.getElementById('dateImage').src = "images/sunset.png";
+    } else if (image > 18 && image <= 23) {
+        document.getElementById('dateImage').src = "images/sunset.png";
+    } else {
+        document.getElementById('dateImage').src = "images/night.png";
+    }
+}
+
+displayDate(), displayClock(), displayImage();

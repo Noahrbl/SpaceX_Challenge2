@@ -1,2 +1,2 @@
 # SpaceX_Challenge2
-Klok
+Tweede challenge voor IxT SpaceX.
